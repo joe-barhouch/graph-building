@@ -1,4 +1,4 @@
-# my-app
+# Neo4J Graph creator with Langserve
 
 ## Installation
 

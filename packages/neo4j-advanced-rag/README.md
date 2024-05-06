@@ -30,7 +30,7 @@ NEO4J_PASSWORD=<YOUR_NEO4J_PASSWORD>
 ## Populating with data
 
 If you want to populate the DB with some example data, you can run `python ingest.py`.
-The script process and stores sections of the text from the file `dune.txt` into a Neo4j graph database.
+The script process and stores sections of Wikipedia pages into a Neo4j graph database.
 First, the text is divided into larger chunks ("parents") and then further subdivided into smaller chunks ("children"), where both parent and child chunks overlap slightly to maintain context.
 After storing these chunks in the database, embeddings for the child nodes are computed using OpenAI's embeddings and stored back in the graph for future retrieval or analysis.
 For every parent node, hypothetical questions and summaries are generated, embedded, and added to the database. 
